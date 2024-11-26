@@ -15,6 +15,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    font-family: 'Audiowide', sans-serif;
 }
 
 /* Contenedor principal */
@@ -33,6 +34,7 @@ body {
     flex: 1 1 60%; /* Toma 60% del espacio disponible */
     padding: 20px;
     text-align: left;
+    
 }
 
 .main-text {
