@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    background-color: #0c3c6d; /* Azul de fondo */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.technology-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es pequeña */
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Contenedor de texto */
+.text-container {
+    flex: 1 1 60%; /* Toma 60% del espacio disponible */
+    padding: 20px;
+    text-align: left;
+}
+
+.main-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #66ffcc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    flex: 1 1 35%; /* Toma 35% del espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
