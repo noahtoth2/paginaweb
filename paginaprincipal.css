@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Audiowide', sans-serif;
+    background-color: #0c3c6d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Necesario para posicionar elementos hijos con posición absoluta */
+}
+
+/* Sección principal */
+.hero-section {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('ruta/a/tu/imagen/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 100%; /* Opción para expandir el contenido */
+    max-width: 800px; /* Evita que se desborde */
+}
+
+/* Logo */
+.logo-container {
+    position: absolute; /* Para colocarlo en la esquina */
+    top: 1px; /* Espaciado desde la parte superior */
+    left: 1px; /* Espaciado desde la parte izquierda */
+}
+.logo {
+    width: 550px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Título */
+.title {
+    font-size: 2.5rem;
+    color: #66ffcc;
+    margin: 10px 0;
+}
+
+/* Descripción */
+.description {
+    font-family: 'Titillium Web';font-size: 22px;
+    font-size: 1.2rem;
+    color: #99ffcc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #66ffcc;
+    color: #0c3c6d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #4db89a;
+}
