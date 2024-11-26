@@ -64,3 +64,10 @@ body {
 .cta-button:hover {
     background-color: #4db89a;
 }
+.navbar {
+    background-color: #0c3c6d; /* Color de fondo del menú */
+    padding: 10px 0;
+    position: sticky; /* El menú permanece fijo al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
