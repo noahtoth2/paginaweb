@@ -1,88 +1,76 @@
-/* Reset básico */
-* {
+/* Estilo general */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fondo general */
-body {
-    background-color: #0c3c6d; /* Azul de fondo */
+    font-family: 'Arial', sans-serif;
+    background-color: #1E3263; /* Fondo azul oscuro */
     color: white;
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    font-family: 'Audiowide', sans-serif;
+    height: 100vh;
 }
 
 /* Contenedor principal */
-.technology-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es pequeña */
+.container {
+    text-align: center;
+    width: 90%;
     max-width: 1200px;
-    width: 100%;
-    align-items: center;
+    margin: auto;
+}
+
+/* Título principal */
+.title {
+    font-size: 3rem;
+    color: #99FFCC; /* Verde brillante */
+    margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.cards {
+    display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-/* Contenedor de texto */
-.text-container {
-    flex: 1 1 60%; /* Toma 60% del espacio disponible */
-    padding: 20px;
-    text-align: left;
-    
-}
-
-.main-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.quote {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #66ffcc;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Contenedor de imágenes */
-.image-container {
-    flex: 1 1 35%; /* Toma 35% del espacio disponible */
+/* Estilo de cada tarjeta */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 23%; /* Ajustar según el espacio */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
 }
 
-.tech-image {
-    max-width: 100%;
+/* Imagen dentro de la tarjeta */
+.card-image {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    object-fit: cover;
 }
 
-.logo-section {
+/* Pie de tarjeta (footer) */
+.card-footer {
+    padding: 15px;
     text-align: center;
+    color: white;
 }
 
-.logo-image {
-    width: 350px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.logo-text {
+/* Texto dentro del footer */
+.card-text {
     font-size: 1.2rem;
     font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin: 0;
+}
+
+.card-text span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: normal;
 }
 .navbar {
     position: fixed; /* Menú fijo en la parte superior */

@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: 'Audiowide', sans-serif;
-    background-color: #0c3c6d;
+    background: url('imagenes/vecteezy_abstract-futuristic-digital-background-technology-for_5550031.jpg') no-repeat center center fixed; /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
     color: #fff;
     display: flex;
     justify-content: center;
